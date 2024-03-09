@@ -61,6 +61,8 @@ header .btn-group .signup {
   font-weight: 500;
 }
 
+/* main section starts here  */
+
 main {
   display: flex;
   flex-direction: column;
@@ -189,5 +191,32 @@ main button:hover {
   }
   100% {
     right: calc(100% - 100px);
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  header ul {
+    display: none;
+  }
+
+  header .btn-group input {
+    display: none;
+  }
+
+  main h3 {
+    font-size: 15px;
+  }
+
+  main .main-heading {
+    font-size: 2rem;
+  }
+
+  main .main-heading :nth-child(2) {
+    margin-top: 0px;
+  }
+
+  main p {
+    padding: 0 15px;
+    text-align: center;
   }
 }
